@@ -13,10 +13,12 @@ let shortWord;
 if (firstWord.length > secondWord.length) {
     longWord = firstWord;
     shortWord = secondWord;
-} else {
+    console.log("La parola più corta è: ", shortWord);
+} else if (firstWord.length < secondWord.length) {
     longWord = secondWord;
     shortWord = firstWord;
+    console.log("La parola più lunga è: ", longWord);
+} else {
+    console.log("Inserisci parole di lunghezza diversa!");
 }
 
-console.log("La parola più corta è: ", shortWord);
-console.log("La parola più lunga è: ", longWord);
